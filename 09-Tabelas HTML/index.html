@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table caption {
+            font-style: italic;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        table tfoot {
+            color: white;
+            font-style: italic;
+            background-color: #4CAF50;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .responsive-table {
+            overflow-x: auto;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>APRENDENDO TABELAS</h1>
+
+    <div class="responsive-table">
+    <table>
+        <caption>Tabela de alunos</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>28</td>
+                <td>Belo Horizonte</td>
+            </tr>
+            <tr>
+                <td colspan="2">Ocupa duas colunas</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td colspan="3">Ocupa tres colunas</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Ocupa duas linhas</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de alunos: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    
+</body>
+</html>
