@@ -1,0 +1,25 @@
+.conteudo {
+    width: 99%;
+    height: 99%;
+    background: white;
+}
+.col {
+    background: red;
+    width: 33.3%;
+    height: 300px;
+    float: left;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+@media (max-width: 320px) {
+    .col {
+        width: 100%;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .col {
+        width: 50%;
+    }
+}
