@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Três colunas de tamanho igual */
+    gap: 30px;
+    width: 100%; /* Garante que a grid ocupe toda a largura disponível */
+}
+
+.grid div {
+    background-color: #58b422;
+    min-height: 100px;
+}
