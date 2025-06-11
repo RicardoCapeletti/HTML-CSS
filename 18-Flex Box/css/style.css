@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: yellow;
+}
+
+.flex-item {
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    margin: 10px;
+    
+}
+
+.two-columns {
+    display: flex;
+}
+
+.two-columns .col {
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 30px;
+}
